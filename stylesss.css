@@ -18,8 +18,25 @@ body {
 header h1 {
     background-color: #000000;
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+}
+header nav ul {
+    list-style: none;
+    float: left; /* Align navigation to the right */
+}
+
+header nav ul li {
+    display: inside;
+    margin-left: 5px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 header h1 {
