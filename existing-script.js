@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var sendButton = document.getElementById("send-button");
     var chatMessages = document.getElementById("chat-messages");
 
-    // Hide chatbot container initially
-    chatbotContainer.style.display = "none";
-
     function appendMessage(message, sender) {
         var messageDiv = document.createElement("div");
         messageDiv.className = sender === "user" ? "user-message" : "bot-message";
