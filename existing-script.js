@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function() {
         showChatbot();
     });
 
-    // You can also add an event listener to close the chatbot when clicking outside of it
-    // document.addEventListener("click", function(event) {
-    //     if (!chatbotContainer.contains(event.target) && event.target !== chatIcon) {
-    //         hideChatbot();
-    //     }
-    // });
+   
+    document.addEventListener("click", function(event) {
+        if (!chatbotContainer.contains(event.target) && event.target !== chatIcon) {
+           hideChatbot();
+        }
+    });
 });
