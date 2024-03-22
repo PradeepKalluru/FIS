@@ -76,7 +76,7 @@ body {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-image: url('chatt.png'); /* Replace 'female-icon.png' with your icon file */
+    background-image: url('https://github.com/PradeepKalluru/FIS/blob/main/chatt.png'); /* Replace 'female-icon.png' with your icon file */
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
