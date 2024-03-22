@@ -20,7 +20,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 300px;
+    width: 300px; /* Adjust width as needed */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -49,14 +49,14 @@ body {
 #user-input {
     width: calc(100% - 70px);
     margin-right: 10px;
-    padding: 5px;
+    padding: 8px; /* Adjust padding */
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
 #send-button {
     width: 60px;
-    padding: 5px;
+    padding: 8px; /* Adjust padding */
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -75,7 +75,7 @@ body {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-image: url('https://github.com/PradeepKalluru/FIS/blob/main/chatt.png'); /* Replace 'female-icon.png' with your icon file */
+    background-image: url('https://github.com/PradeepKalluru/FIS/blob/main/chatt.png'); /* Replace with your icon path */
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
