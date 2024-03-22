@@ -1,9 +1,12 @@
-// Chatbot JavaScript
 document.addEventListener("DOMContentLoaded", function() {
     var chatbotContainer = document.getElementById("chatbot-container");
+    var chatIcon = document.getElementById("chatbot-icon");
     var userInput = document.getElementById("user-input");
     var sendButton = document.getElementById("send-button");
     var chatMessages = document.getElementById("chat-messages");
+
+    // Hide chatbot container initially
+    chatbotContainer.style.display = "none";
 
     function appendMessage(message, sender) {
         var messageDiv = document.createElement("div");
@@ -11,6 +14,14 @@ document.addEventListener("DOMContentLoaded", function() {
         messageDiv.innerText = message;
         chatMessages.appendChild(messageDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight; // Auto-scroll to bottom
+    }
+
+    function showChatbot() {
+        chatbotContainer.style.display = "block";
+    }
+
+    function hideChatbot() {
+        chatbotContainer.style.display = "none";
     }
 
     sendButton.addEventListener("click", function() {
@@ -38,4 +49,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Simulate receiving a message from the backend after a delay
     setTimeout(simulateBackendResponse, 1000);
+
+    // Event listener for chat icon button click
+    chatIcon.addEventListener("click", function() {
+        showChatbot();
+    });
+
+    // You can also add an event listener to close the chatbot when clicking outside of it
+    // document.addEventListener("click", function(event) {
+    //     if (!chatbotContainer.contains(event.target) && event.target !== chatIcon) {
+    //         hideChatbot();
+    //     }
+    // });
 });
