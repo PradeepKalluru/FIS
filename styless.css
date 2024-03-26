@@ -150,19 +150,18 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-.data-boxes .boxes-container {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly with space between them */
-    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+.data-boxes .container {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Distribute space between the boxes */
 }
 
 .data-boxes .box {
-    flex-basis: calc(33.33% - 20px); /* Set the initial size of the boxes */
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 20px; /* Adjust margin as needed */
-    box-sizing: border-box;
+    width: 30%; /* Adjust the width of each box as needed */
+    border: 1px solid #ccc; /* Add borders for visualization */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align the content */
 }
+
 
 @media (max-width: 768px) {
     .data-boxes .box {
