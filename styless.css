@@ -152,16 +152,21 @@ footer {
 }
 .data-boxes .container {
     display: flex; /* Use Flexbox */
-    justify-content: space-between; /* Distribute space between the boxes */
 }
 
 .data-boxes .box {
-    width: 30%; /* Adjust the width of each box as needed */
+    width: calc(33.33% - 20px); /* Adjust the width of each box, accounting for margin */
+    margin-right: 20px; /* Add margin between boxes */
     border: 1px solid #ccc; /* Add borders for visualization */
     padding: 20px; /* Add padding for spacing */
-    text-align: center; /* Center-align the content */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
+/* Optionally, you can style the headings within the boxes */
+.data-boxes .box h3 {
+    font-size: 16px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margins */
+}
 
 @media (max-width: 768px) {
     .data-boxes .box {
